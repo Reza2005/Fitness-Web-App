@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ProfilePage = () => {
-  // Data pengguna (contoh)
   const user = {
     nama: 'Pengguna Demo',
     email: 'user@example.com',
@@ -9,12 +8,12 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="p-5 font-sans bg-gray-50 min-h-screen">
+    <div className="p-5">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
         Profil Saya
       </h1>
       
-      <div className="bg-white max-w-lg mx-auto p-8 rounded-xl shadow-lg">
+      <div className="bg-white max-w-lg mx-auto p-8 rounded-xl shadow-lg border border-gray-200">
         <div className="text-lg mb-4">
           <span className="font-bold text-gray-600">Nama: </span>
           <span className="text-gray-800">{user.nama}</span>

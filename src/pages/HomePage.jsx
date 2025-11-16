@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className="p-5 text-center font-sans">
+    <div className="p-5 text-center">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">
         Selamat Datang di Health App!
       </h1>
