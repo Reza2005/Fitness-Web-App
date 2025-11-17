@@ -2,32 +2,37 @@ import React from 'react';
 
 const ProfilePage = () => {
   const user = {
-    nama: 'Pengguna Demo',
-    email: 'user@example.com',
-    bergabung: '16 November 2025',
+    nama: 'Muhamad Reswara Suryawan',
+    NIM: '21120123140126',
+    bergabung: '10 November 2005',
   };
 
   return (
-    <div className="p-5">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
+    <div className="p-5 font-sans">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
         Profil Saya
       </h1>
-      
-      <div className="bg-white max-w-lg mx-auto p-8 rounded-xl shadow-lg border border-gray-200">
-        <div className="text-lg mb-4">
-          <span className="font-bold text-gray-600">Nama: </span>
-          <span className="text-gray-800">{user.nama}</span>
-        </div>
+
+      <div className="bg-white max-w-lg mx-auto p-8 rounded-2xl shadow-md border border-gray-100">
         
-        <div className="text-lg mb-4">
-          <span className="font-bold text-gray-600">Email: </span>
-          <span className="text-gray-800">{user.email}</span>
+        {/* Nama */}
+        <div className="mb-6">
+          <p className="text-sm text-gray-500 mb-1">Nama</p>
+          <p className="text-xl font-semibold text-gray-800">{user.nama}</p>
         </div>
-        
-        <div className="text-lg">
-          <span className="font-bold text-gray-600">Bergabung Sejak: </span>
-          <span className="text-gray-800">{user.bergabung}</span>
+
+        {/* Email */}
+        <div className="mb-6">
+          <p className="text-sm text-gray-500 mb-1">NIM</p>
+          <p className="text-xl text-gray-800">{user.NIM}</p>
         </div>
+
+        {/* Tanggal Bergabung */}
+        <div>
+          <p className="text-sm text-gray-500 mb-1">Bergabung Sejak</p>
+          <p className="text-xl text-gray-800">{user.bergabung}</p>
+        </div>
+
       </div>
     </div>
   );
